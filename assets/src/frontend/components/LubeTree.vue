@@ -261,7 +261,15 @@ export default {
     },
     goToProduct (id) {
       this.$router.push({
-        name: 'product'
+        name: 'product',
+        params: {
+          productID: id,
+          // data: this.quizData,
+          from: this.$route,
+          level: this.level,
+          title: this.title,
+          routeId: this.routeId
+        }
       })
     },
     levelIndicator () {

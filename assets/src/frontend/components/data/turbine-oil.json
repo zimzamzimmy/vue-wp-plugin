@@ -1,0 +1,90 @@
+{
+    "name": "Turbine Oil",
+    "levels": 5,
+    "title": "Turbine Oil Selector",
+    "question": "Which type of turbines do you have?",
+    "type": "IconBlock",
+    "options": [
+        {
+            "id": "A",
+            "title": "Steam Turbines"
+        },
+        {
+            "id": "B",
+            "title": "Gas Turbines"
+        },
+        {
+            "id": "C",
+            "title": "Hydro Electric Turbines"
+        }
+    ],
+    "steps": [
+        {
+            "ids": ["A", "B", "C"],
+            "question": "Is the turbine geared or ungeared?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "title": "Geared Turbines"
+                },
+                {
+                    "id": "B",
+                    "title": "Ungeared Turbines"
+                }
+            ]
+        },
+        {
+            "ids": ["AA", "BA", "CA", "AB", "BB", "CB"],
+            "question": "What type of oil is being used?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "title": "Mineral"
+                },
+                {
+                    "id": "B",
+                    "title": "Synthetic"
+                }
+            ]
+        },
+        {
+            "ids": ["AAA", "ABA", "BAA", "BBA", "CAA", "CBA"],
+            "question": "Is your current oil Zinc based?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "subtitle": "Yes"
+                },
+                {
+                    "id": "B",
+                    "subtitle": "No"
+                }
+            ]
+        }
+    ],
+    "routes": [
+        {
+            "steps": ["AAAA", "CAAA", "ABAA", "BBAA", "BAAA", "CBAA"],
+            "product": "Jenteram",
+            "productId": 212
+        },
+        {
+            "steps": ["AAAB", "BAAB", "CAAB"],
+            "product": "Jenteram G",
+            "productId": 213
+        },
+        {
+            "steps": ["ABB", "AAB", "BAB", "CAB", "BBB", "CBB"],
+            "product": "Jenteram SYN",
+            "productId": 214
+        },
+        {
+            "steps": ["ABAB", "BBAB", "CBAB"],
+            "product": "Jenteram U",
+            "productId": 215
+        }
+    ]
+}

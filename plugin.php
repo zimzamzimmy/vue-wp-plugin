@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: Vue Starter Plugin
+Plugin Name: Vue Wordpress Plugin
 Plugin URI: https://example.com/
-Description: A WordPress Vue.js starter plugin
+Description: A WordPress Vue.js plugin
 Version: 0.1
-Author: Your Name
+Author: Leo Woods
 Author URI: https://example.com/
 License: GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html

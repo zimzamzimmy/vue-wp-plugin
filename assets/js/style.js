@@ -1,10 +1,10 @@
 pluginWebpack([2],{
 
-/***/ 38:
+/***/ 72:
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ })
 
-},[38]);
+},[72]);

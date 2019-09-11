@@ -6,6 +6,10 @@ import LubeRecommenderTools from 'frontend/components/LubeRecommenderTools.vue'
 import LubeTree from 'frontend/components/LubeTree.vue'
 import ProductPage from 'frontend/components/ProductPage.vue'
 import GearOilData from 'frontend/components/data/gear-oil.json'
+import AirCompressorData from 'frontend/components/data/air-compressor.json'
+import CirculatingOilData from 'frontend/components/data/circulating-oil.json'
+import HydraulicOilData from 'frontend/components/data/hydraulic-oil.json'
+import TurbineOilData from 'frontend/components/data/turbine-oil.json'
 
 Vue.use(Router)
 
@@ -33,6 +37,24 @@ export default new Router({
       meta: {
         title: 'Gear Oil',
         tool: GearOilData
+      }
+    },
+    {
+      path: '/lube-tools/gear-oil/air-compressor-oil',
+      name: 'air_compressor_oil',
+      component: LubeTree,
+      meta: {
+        title: 'Air Compressor Oil',
+        tool: AirCompressorData
+      }
+    },
+    {
+      path: '/lube-tools/circulating-oil',
+      name: 'circulating_oil',
+      component: LubeTree,
+      meta: {
+        title: 'Circulating Oil',
+        tool: CirculatingOilData
       }
     },
     {

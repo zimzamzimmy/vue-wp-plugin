@@ -1,2 +1,2 @@
-.lube-recommender-block{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;cursor:pointer;font-size:18px}
+.lube-recommender-block{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;cursor:pointer;font-size:18px}.block{position:relative;display:block;background-color:$white;box-shadow:0 1px 2px 0 rgba(0,0,0,.2),0 1px 3px 0 rgba(0,0,0,.1);border-radius:2px;min-height:100px;width:100%;transition:all .3s ease;box-sizing:border-box}.block:hover{box-shadow:0 6px 6px 0 rgba(0,0,0,.26),0 10px 20px 0 rgba(0,0,0,.19)}
 /*# sourceMappingURL=frontend.css.map */

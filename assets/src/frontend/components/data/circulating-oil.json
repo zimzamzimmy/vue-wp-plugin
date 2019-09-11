@@ -1,0 +1,176 @@
+{
+    "name": "Circulating Oil",
+    "levels": 4,
+    "title": "Circulating Oil Selector",
+    "question": "Which type of circulating systems do you have?",
+    "type": "IconBlock",
+    "options": [
+        {
+            "id": "A",
+            "title": "Gear Box"
+        },
+        {
+            "id": "B",
+            "title": "Anti-friction Bearing"
+        },
+        {
+            "id": "C",
+            "title": "Plain Bearing"
+        }
+    ],
+    "steps": [
+        {
+            "ids": ["A"],
+            "question": "Select your most critical anti-wear property",
+            "type": "MultiBlock",
+            "multiOptions": [
+                {
+                "title": "EP performance"
+                },
+                {
+                "title": "Micro Pitting Performance"
+                },
+                {
+                "title": "High temperature",
+                "subtitle": "Over 60°C / 140°F"
+                }
+            ],
+            "options": [
+                {
+                    "id": "A",
+                    "selection": ["100"]
+                },
+                {
+                    "id": "B",
+                    "selection": ["010", "110"]
+                },
+                {
+                    "id": "C",
+                    "selection": ["001"]
+                },
+                {
+                    "id": "D",
+                    "selection": ["111", "011", "101"]
+                }
+            ]
+        }, 
+        {
+            "ids": ["B", "C"],
+            "question": "Select your most critical anti-wear property",
+            "type": "MultiBlock",
+            "multiOptions": [
+                {
+                "title": "Anti Wear Performance"
+                },
+                {
+                "title": "High Water Tolerance"
+                },
+                {
+                "title": "High temperature",
+                "subtitle": "Over 60°C / 140°F"
+                }
+            ],
+            "options": [
+                {
+                    "id": "A",
+                    "selection": ["100"]
+                },
+                {
+                    "id": "B",
+                    "selection": ["110", "010"]
+                },
+                {
+                    "id": "C",
+                    "selection": ["111", "001", "011", "101"]
+                }
+            ]
+        },
+        {
+            "ids": ["AA", "AB", "BA", "CA", "CB","BB"],
+            "question": "Select your maximum operating oil temperature",
+            "title": "High water tolerance",
+            "type": "TempBlock",
+            "options": [
+                {
+                    "tempOptions": [0, 1, 2, 3, 4, 5, 6, 7],
+                    "id": "T"
+                }
+            ]
+        }
+    ],
+    "temperatures": [
+        {
+            "c": "below 40°C",
+            "f": "below 105°F"
+        },
+        {
+            "c": "40°C - 50°C",
+            "f": "105°F - 122°F"
+        },
+        {
+            "c": "50°C - 60°C",
+            "f": "122°F - 140°F"
+        },
+        {
+            "c": "60°C - 70°C",
+            "f": "140°F - 158°F"
+
+        },
+        {
+            "c": "70°C - 80°C",
+            "f": "158°F - 176°F"
+
+        },
+        {
+            "c": "80°C - 90°C",
+            "f": "176°F - 194°F"
+
+        },
+        {
+            "c": "90°C - 100°C",
+            "f": "194°F - 212°F"
+
+        },
+        {
+            "c": "over 100°C",
+            "f": "over 212°F"
+        }
+    ],
+    "routes": [
+        {
+            "steps": ["AAT"],
+            "product": "Gear MEP",
+            "productId": 245
+        },
+        {
+            "steps": ["BAT", "CAT"],
+            "product": "Circula",
+            "productId": 244
+        },
+        {
+            "steps": ["ABT"],
+            "product": "Gear FL",
+            "productId": 241
+        },
+        {
+            "steps": ["BBT", "CBT"],
+            "product": "Circula Mill",
+            "productId": 242
+        },
+        {
+            "steps": ["AC"],
+            "product": "Gear Syn Series",
+            "productId": 276
+        },
+        {
+            "steps": ["AD"],
+            "product": "Gear PAG",
+            "productId": 257
+        },
+        {
+            "steps": ["BC", "CC"],
+            "product": "Circula Syn",
+            "productId": 258
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "name": "Air Compressor Oil",
+    "levels": 3,
+    "title": "Air Compressor Oil Selector",
+    "question": "Which air compressor do you have?",
+    "type": "IconBlock",
+    "options": [
+        {
+            "id": "A",
+            "title": "Rotary Vane"
+        },
+        {
+            "title": "Rotary Screw",
+            "id": "B"
+        },
+        {
+            "title": "Piston",
+            "id": "C"
+        },
+        {
+            "title": "Centrifugal",
+            "id": "D"
+        }
+    ],
+    "steps": [
+        {
+            "ids": ["A", "B"],
+            "question": "Select your operating cycle",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "title": "Up to 2,000 hours",
+                    "id": "A"
+                },
+                {
+                    "title": "2,000 - 4,000 hours",
+                    "id": "B"
+                },
+                {
+                    "title": "8,000 hours",
+                    "id": "C"
+                },
+                {
+                    "title": "12,000 hours",
+                    "id": "D"
+                }
+            ]
+        },
+        {
+            "ids": ["C"],
+            "question": "Select your operating cycle",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "title": "Up to 2,000 hours",
+                    "id": "A"
+                },
+                {
+                    "title": "2,000 - 4,000 hours",
+                    "id": "B"
+                },
+                {
+                    "title": "8,000 hours",
+                    "id": "C"
+                }
+            ]
+        },
+        {
+            "ids": ["D"],
+            "question": "Select your operating cycle",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "title": "4,000 hours",
+                    "id": "A"
+                },
+                {
+                    "title": "8,000 hours",
+                    "id": "B"
+                },
+                {
+                    "title": "12,000 hours",
+                    "id": "C"
+                }
+            ]
+        }
+    ],
+    "routes": [
+        {
+            "steps": ["AD", "BD", "DC"],
+            "product": "Compressor SYN POE",
+            "productId": 101
+        },
+        {
+            "steps": ["AC", "BC", "CC", "DB"],
+            "product": "Compressor SYN PAO",
+            "productId": 100
+        },
+        {
+            "steps": ["AB", "BB", "CB", "DAB"],
+            "product": "Compressor A M4",
+            "productId": 211
+        },
+        {
+            "steps": ["AA", "BA", "CA"],
+            "product": "Compressor A M2",
+            "productId": 210
+        },
+        {
+            "steps": ["DA"],
+            "product": "Jenteram",
+            "productId": 212
+        }
+    ]
+}

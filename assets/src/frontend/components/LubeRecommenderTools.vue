@@ -1,7 +1,6 @@
 <template>
   <div class="lube-recommender-wrapper lube-recommender-overview tco-calculator-wrapper tco-overview">
-    <div class="hero"
-         :style="{ 'background': 'url(/public/assets/images/bg/oil-selector-card-bg.png) center center no-repeat', 'background-size': 'cover', 'background-position': '50% 50%' }">
+    <div class="hero">
       <div class="overlay"></div>
       <div class="inner">
         <div class="info">
@@ -70,7 +69,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 .lube-recommender-block {
   display: flex;
   flex-direction: column;
@@ -79,5 +78,19 @@ export default {
   text-align: center;
   cursor: pointer;
   font-size: 18px;
+}
+.block {
+  position: relative;
+  display: block;
+  background-color: $white;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
+  border-radius: 2px;
+  min-height: 100px;
+  width: 100%;
+  transition: all .3s ease;
+  box-sizing: border-box;
+  &:hover {
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.26), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+  }
 }
 </style>

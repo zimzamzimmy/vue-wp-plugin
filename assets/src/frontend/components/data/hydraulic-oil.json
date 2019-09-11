@@ -1,0 +1,217 @@
+{
+    "name": "Hydraulic Oil",
+    "levels": 5,
+    "title": "Hydraulic Oil Selector",
+    "question": "Which type of hydraulic pumps do you have?",
+    "type": "IconBlock",
+    "options": [
+        {
+            "id": "A",
+            "title": "Vane Pump 14-16-cSt"
+        },
+        {
+            "id": "B",
+            "title": "Gear Pump 15-22,000-cSt"
+        },
+        {
+            "id": "C",
+            "title": "Piston Pump 10-160-cSt"
+        }
+    ],
+    "steps": [
+        {
+            "ids": ["A", "B", "C"],
+            "question": "Select your maximum operating oil temperature",
+            "type": "TempBlock",
+            "options": [
+                {
+                    "tempOptions": [0, 1, 2, 3, 4, 5, 6, 7],
+                    "id": "T"
+                }
+            ]
+        },
+        {
+            "ids": ["AT", "BT", "CT"],
+            "question": "Which of the below is of most critical importance for choosing your hydraulic oil type?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "title": "Multimetal Compatibility"
+                },
+                {
+                    "id": "B",
+                    "title": "Environmental Sensitivity"
+                },
+                {
+                    "id": "C",
+                    "title": "Fire Risk"
+                },
+                {
+                    "id": "D",
+                    "title": "Water Tolerance"
+                }
+            ]
+        },
+        {
+            "ids": ["ATA", "BTA", "CTA"],
+            "question": "Select whether you require a Zinc free or Zinc based fluid",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "title": "Zinc Based"
+                },
+                {
+                    "id": "B",
+                    "title": "Zinc Free"
+                }
+            ]
+        },
+        {
+            "ids": ["ATAA", "BTAA", "CTAA"],
+            "question": "Is energy saving a requirement?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "subtitle": "Yes"
+                },
+                {
+                    "id": "B",
+                    "subtitle": "No"
+                }
+            ]
+        },
+        {
+            "ids": ["ATAAB", "BTAAB", "CTAAB", "ATAB", "BTAB", "CTAB"],
+            "question": "Do you require a Standard VI or a High VI?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "title": "Standard VI"
+                },
+                {
+                    "id": "B",
+                    "title": "High VI"
+                }
+            ]
+        },
+        {
+            "ids": ["ATB", "BTB", "CTB"],
+            "question": "Do you require a Biodegradable Eco label?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "subtitle": "Yes"
+                },
+                {
+                    "id": "B",
+                    "subtitle": "No"
+                }
+            ]               
+        },
+        {
+            "ids": ["ATC", "BTC", "CTC"],
+            "question": "What type of anti-wear properties do you require?",
+            "type": "PlainBlock",
+            "options": [
+                {
+                    "id": "A",
+                    "subtitle": "Good Anti-wear"
+                },
+                {
+                    "id": "B",
+                    "subtitle": "Excellent Anti-wear"
+                }
+            ]
+        }
+    ],
+    "temperatures": [
+        {
+            "c": "below 40°C",
+            "f": "below 105°F"
+        },
+        {
+            "c": "40°C - 50°C",
+            "f": "105°F - 122°F"
+        },
+        {
+            "c": "50°C - 60°C",
+            "f": "122°F - 140°F"
+        },
+        {
+            "c": "60°C - 70°C",
+            "f": "140°F - 158°F"
+
+        },
+        {
+            "c": "70°C - 80°C",
+            "f": "158°F - 176°F"
+
+        },
+        {
+            "c": "80°C - 90°C",
+            "f": "176°F - 194°F"
+
+        },
+        {
+            "c": "90°C - 100°C",
+            "f": "194°F - 212°F"
+
+        },
+        {
+            "c": "over 100°C",
+            "f": "over 212°F"
+        }
+    ],
+    "routes": [
+        {
+            "steps": ["ATD", "BTD", "CTD"],
+            "product": "Hydraulic HLPD",
+            "productId": 251
+        },
+        {
+            "steps": ["ATCB", "BTCB", "CTCB"],
+            "product": "Hydraulic FR",
+            "productId": 252
+        },
+        {
+            "steps": ["ATCA", "BTCA", "CTCA"],
+            "product": "Hydraulic HFC",
+            "productId": 253
+        },
+        {
+            "steps": ["ATBA", "BTBA", "CTBA"],
+            "product": "Hydraulic Syn Bio",
+            "productId": 254
+        },
+        {
+            "steps": ["ATAABA", "BTAABA", "CTAABA"],
+            "product": "Hydraulic",
+            "productId": 248
+        },
+        {
+            "steps": ["ATAAA", "BTAAA", "CTAAA"],
+            "product": "Hydraulic ESF",
+            "productId": 246
+        },
+        {
+            "steps": ["ATAABB", "BTAABB", "CTAABB"],
+            "product": "Hydraulic HV Series",
+            "productId": 247
+        },
+        {
+            "steps": ["ATABB", "BTABA", "CTABA"],
+            "product": "Hydraulic HVZF",
+            "productId": 250
+        },
+        {
+            "steps": ["ATBB", "BTBB", "CTBB", "ATABA", "BTABB", "CTABB"],
+            "product": "Hydraulic ZF",
+            "productId": 249
+        }
+    ]
+}
