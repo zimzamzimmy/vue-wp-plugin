@@ -1,0 +1,142 @@
+{
+  "name": "Gear Oil",
+  "levels": 5,
+  "title": "Gear Oil Selector",
+  "question": "Which type of gear drives do you have?",
+  "type": "IconBlock",
+  "options": [
+      {
+          "id": "A",
+          "title": "Spur / Bevel"
+      },
+      {
+          "id": "B",
+          "title": "Helical / Spiral Bevel"
+      },
+      {
+          "id": "C",
+          "title": "Hypoid"
+      },
+      {
+          "id": "D",
+          "title": "Worm"
+      }
+  ],
+  "steps": [
+      {
+          "ids": ["A", "B", "C", "D"],
+          "question": "Do you require a food grade lubricant",
+          "type": "PlainBlock",
+          "options": [
+              {
+                  "id": "A",
+                  "subtitle": "Yes"
+              },
+              {
+                  "id": "B",
+                  "subtitle": "No"
+              }
+          ]
+      },
+      {
+          "ids": ["AB", "BB", "CB", "DB"],
+          "question": "Select maximum oil temperature in operation",
+          "type": "PlainBlock",
+          "options": [
+              {
+                  "id": "A",
+                  "title": "EP Gear Oils",
+                  "subtitle": "- 15-82°C"
+              },
+              {
+                  "id": "B",
+                  "title": "Synthetic Gear Oils",
+                  "subtitle": " - 30-180°C"
+              }
+          ]
+      },
+      {
+          "ids": ["ABA", "ABB", "BBA", "BBB", "CBA", "CBB", "DBA"],
+          "question": "Select the gearbox load",
+          "type": "PlainBlock",
+          "options": [
+              {
+                  "id": "A",
+                  "subtitle": "Low"
+              },
+              {
+                  "id": "B",
+                  "subtitle": "High"
+              }
+          ]
+      },
+      {
+          "ids": ["DBB"],
+          "question": "Select the gearbox load",
+          "type": "PlainBlock",
+          "options": [
+              {
+                  "id": "A",
+                  "subtitle": "Low"
+              },
+              {
+                  "id": "B",
+                  "subtitle": "Very high"
+              }
+          ]
+      },
+      {
+          "ids": ["BBAA"],
+          "level": 6,
+          "question": "Do you require Flender Approval?",
+          "type": "PlainBlock",
+          "options": [
+              {
+                  "id": "A",
+                  "subtitle": "Yes"
+              },
+              {
+                  "id": "B",
+                  "subtitle": "No"
+              }
+          ]
+      }
+  ],
+  "routes": [
+      {
+          "steps": ["DBBB", "BBBB", "CBBB"],
+          "product": "Gear SYN PAG",
+          "productId": 259
+      },
+      {
+          "steps": ["AA", "BA", "CA", "DA"],
+          "product": "Gear SYN FG",
+          "productId": 243
+      },
+      {
+          "steps": ["ABAA"],
+          "product": "Circula Series",
+          "productId": 244
+      },
+      {
+          "steps": ["ABAB", "ABBA"],
+          "product": "Circula SYN",
+          "productId": 258
+      },
+      {
+          "steps": ["CBAB", "DBBA", "CBBA", "ABBB", "DBAB", "BBAB", "BBBA"],
+          "product": "Gear SYN PAO",
+          "productId": 260
+      },
+      {
+          "steps": ["DBAA", "BBAAB", "CBAA"],
+          "product": "Gear MEP",
+          "productId": 245
+      },
+      {
+          "steps": ["BBAAA"],
+          "product": "Gear FL",
+          "productId": 241
+      }
+  ]
+}
