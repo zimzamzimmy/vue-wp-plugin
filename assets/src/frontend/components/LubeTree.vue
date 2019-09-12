@@ -1,5 +1,5 @@
 <template>
-  <div class="lube-recommender-tool-wrapper" :style="{'background-image': 'url(../app/plugins/vue-wp-plugin/assets/images/bg/login-bg.svg)'}">
+  <div class="lube-recommender-tool-wrapper" :style="{'background-image': 'url(../app/plugins/vue-lube-recommender/assets/images/bg/login-bg.svg)'}">
     <div class="flex-wrapper">
       <div class="white-bg">
         <div class="top-wrapper">

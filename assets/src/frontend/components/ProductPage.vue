@@ -1,5 +1,5 @@
 <template>
-  <div class="lube-recommender-tool-wrapper product-page" :style="{'background-image': 'url(../app/plugins/vue-wp-plugin/assets/images/bg/login-bg.svg)'}">
+  <div class="lube-recommender-tool-wrapper product-page" :style="{'background-image': 'url(../app/plugins/vue-lube-recommender/assets/images/bg/login-bg.svg)'}">
     <div class="flex-wrapper">
       <div class="white-bg">
         <div class="top-wrapper">
@@ -59,7 +59,7 @@
               </div>
             </div>
           </div>
-          <div class="text-center oem-manual"><span class="bell-icon" :style="{'background-image': 'url(../app/plugins/vue-wp-plugin/assets/images/icons/lube-recommender/bell.svg)'}"/> Check with OEM manual for viscosity grade</div>
+          <div class="text-center oem-manual"><span class="bell-icon" :style="{'background-image': 'url(../app/plugins/vue-lube-recommender/assets/images/icons/lube-recommender/bell.svg)'}"/> Check with OEM manual for viscosity grade</div>
         </div>
       </div>
     </div>
@@ -148,7 +148,7 @@ export default {
       } else {
         image = key
       }
-      return '../app/plugins/vue-wp-plugin/assets/images/products/files/' + image + '-thumbnail.png'
+      return '../app/plugins/vue-lube-recommender/assets/images/products/files/' + image + '-thumbnail.png'
     },
     goToRecommender () {
       this.$router.push({

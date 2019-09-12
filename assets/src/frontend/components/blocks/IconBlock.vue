@@ -17,7 +17,7 @@ export default {
   methods: {
     iconUrl (title) {
       title = title.toLowerCase().replace(/\//g, '').replace(/ /g, '-').replace(/--/g, '-')
-      return `../app/plugins/vue-wp-plugin/assets/images/lube-recommender/${title}.svg`
+      return `../app/plugins/vue-lube-recommender/assets/images/lube-recommender/${title}.svg`
     }
   }
 }
