@@ -1,5 +1,5 @@
 <template>
-  <div class="lube-recommender-tool-wrapper product-page" :style="{'background-image': 'url(/public/assets/images/bg/login-bg.svg)'}">
+  <div class="lube-recommender-tool-wrapper product-page" :style="{'background-image': 'url(../app/plugins/vue-wp-starter/assets/images/bg/login-bg.svg)'}">
     <div class="flex-wrapper">
       <div class="white-bg">
         <div class="top-wrapper">
@@ -59,10 +59,7 @@
               </div>
             </div>
           </div>
-          <div class="text-center oem-manual product-link">
-            <router-link :to="{ name: 'products.product', params: { productId: product.nid, from: $route } }" class="oem-manual product-link" v-if="product.nid">Go to full product page <span class="icon icon-arrow" /></router-link>
-          </div>
-          <div class="text-center oem-manual"><span class="bell-icon" :style="{'background-image': 'url(/public/assets/images/icons/lube-recommender/bell.svg)'}"/> Check with OEM manual for viscosity grade</div>
+          <div class="text-center oem-manual"><span class="bell-icon" :style="{'background-image': 'url(../app/plugins/vue-wp-starter/assets/images/icons/lube-recommender/bell.svg)'}"/> Check with OEM manual for viscosity grade</div>
         </div>
       </div>
     </div>
@@ -151,7 +148,7 @@ export default {
       } else {
         image = key
       }
-      return '/public/assets/images/products/files/' + image + '-thumbnail.png'
+      return '../app/plugins/vue-wp-starter/assets/images/products/files/' + image + '-thumbnail.png'
     },
     goToRecommender () {
       this.$router.push({
@@ -178,3 +175,161 @@ export default {
   }
 }
 </script>
+
+<style lang="less">
+.product-page {
+  @keyframes spinner {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .ul {
+    list-style: none;
+  }
+  .spinner-container {
+    position: relative;
+    display: block;
+    margin: 50px;
+    transition: all .3s ease;
+    .spinner {
+      &:before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 20px;
+        margin-top: -10px;
+        margin-left: -10px;
+        border-radius: 50%;
+        border: 2px solid #8DDADA;
+        border-top-color: #00A19C;
+        animation: spinner .6s linear infinite;
+      }
+    }
+  }
+  .block {
+    &:hover {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
+    }
+  }
+  .top-container {
+    .petronas-header {
+      text-transform: uppercase;
+      color: #00A19C;
+      font-size: 12px;
+      font-weight: 800;
+    }
+    h1 {
+      font-weight: 400;
+    }
+    h5 {
+      font-size: 14px;
+    }
+    text-align: center;
+    padding: 20px;
+    border-bottom: 6px solid #006D68;
+    &.standard {
+      border-color: #006D68;
+    }
+    &.premium {
+      border-color: #A4A7AA;
+    }
+    &.supreme {
+      border-color: #C49F05;
+    }
+  }
+  .col-product {
+    width: 60%;
+    max-width: 700px;
+  }
+  .top-header {
+    font-size: 14px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+  .flex-container {
+    height: auto;
+    min-height: auto;
+  }
+  .bottom-container {
+    background-color: #fafafa;
+    .col {
+      padding: 30px 40px;
+    }
+    .footnote {
+      margin-top: 20px;
+      margin-bottom: -20px;
+      padding-left: 30px;
+      p {
+        font-size: 11px;
+        color: #ccc;
+        line-height: 1.4;
+      }
+    }
+  }
+  .oem-manual {
+    color: #00A19C;
+    font-size: 12px;
+    margin-top: 30px;
+    .bell-icon {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-bottom: -3px;
+      margin-right: 8px;
+    }
+  }
+}
+.tick-list {
+  padding: 0;
+  li {
+    padding: 10px 0;
+    padding-left: 30px;
+    &:before {
+      font-family: "icomoon";
+      content: "\e91d";
+      display: inline-block;
+      margin-left: -30px;
+      width: 30px;
+      color: #1ABBB6;
+      font-size: 20px;
+    }
+  }
+}
+
+.document-list {
+  padding-top: 5px;
+  li {
+    @include shadow-1;
+    margin: 10px 0;
+    background-color: $white;
+    a {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: center;
+      color: #333;
+      :nth-child(2) {
+        padding-left: 25px;
+      }
+    }
+    
+    &:hover {
+      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
+    }
+    img {
+      height: 75px;
+      width: 75px;
+      vertical-align: middle;
+    }
+  }
+}
+</style>

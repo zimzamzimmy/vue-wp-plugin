@@ -1,4 +1,5 @@
 <template>
+  <div class="lube-recommender-tool-wrapper" :style="{'background-image': 'url(../app/plugins/vue-wp-starter/assets/images/bg/login-bg.svg)'}">
     <div class="flex-wrapper">
       <div class="white-bg">
         <div class="top-wrapper">
@@ -7,10 +8,10 @@
               <span class="icon icon-arrow middle back-arrow"></span>
               Back
             </a>
-            <!-- <router-link :to="{ name: $router.resolve(this.$route.meta.parent).route.name }" class="back" v-else>
+            <router-link :to="{ name: 'lube_recommender_tools' }" class="back" v-else>
               <span class="icon icon-arrow middle back-arrow"></span>
               Back
-            </router-link> -->
+            </router-link>
           </div>
 
           <div class="col col-main text-center top-heading" v-if="type === 'TempBlock' ">
@@ -38,14 +39,14 @@
         <div class="flex-top-container">
           <div class="temp-box flex-container" v-if="type === 'TempBlock' ">
             <div class="temp-tool col col-3">
-              <div class="temp-type temp-head">{{ translate('Preferred unit of measurement') }}
+              <div class="temp-type temp-head">{{ 'Preferred unit of measurement' }}
                   <div class="button-group right" role="group" aria-label="Basic example">
                     <button type="button" class="button small inline" :class="{ white: !isMetric }" @click="isMetric = true">°C</button>
                     <button type="button" class="button small inline" :class="{ white: isMetric  }" @click="isMetric = false">°F</button>
                   </div>
                 <div class="clearfix"></div>
               </div>
-              <div class="temp-head dropdown" @click="show = !show">{{ translate('Oil temperatures in operation') }}</div>
+              <div class="temp-head dropdown" @click="show = !show">{{ 'Oil temperatures in operation' }}</div>
               <div class="block plain-block temp-block" v-if="show">
                 <div class="inner">
                   <ul>
@@ -99,6 +100,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>

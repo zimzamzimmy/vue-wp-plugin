@@ -14,11 +14,6 @@ pluginWebpack([0],[
 //
 //
 //
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["a"] = ({
     name: 'App'
@@ -29,49 +24,8 @@ pluginWebpack([0],[
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blocks_LubeRecommenderBlock_vue__ = __webpack_require__(28);
 //
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-
-    name: 'Home',
-
-    data() {
-        return {
-            msg: 'Welcome to Your Vue.js App'
-        };
-    }
-});
-
-/***/ }),
-/* 7 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-//
-//
-//
-//
-//
-//
-
-/* harmony default export */ __webpack_exports__["a"] = ({
-    name: 'Profile',
-    data() {
-        return {};
-    }
-});
-
-/***/ }),
-/* 8 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blocks_LubeRecommenderBlock_vue__ = __webpack_require__(37);
 //
 //
 //
@@ -123,21 +77,13 @@ pluginWebpack([0],[
         title: 'Gear Oil',
         route: 'gear_oil',
         icon: 'https://qa.pli-portal.com/public/assets/images/icons/lube-recommender/gears.svg'
-      }, {
-        title: 'Hydraulic Oil',
-        route: 'hydraulic_oil',
-        icon: 'https://qa.pli-portal.com/public/assets/images/icons/lube-recommender/hydraulic-oil.svg'
-      }, {
-        title: 'Turbine Oil',
-        route: 'turbine_oil',
-        icon: 'https://qa.pli-portal.com/public/assets/images/icons/lube-recommender/turbine.svg'
       }];
     }
   }
 });
 
 /***/ }),
-/* 9 */
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -168,15 +114,17 @@ pluginWebpack([0],[
 });
 
 /***/ }),
-/* 10 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blocks_IconBlock_vue__ = __webpack_require__(41);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_PlainBlock_vue__ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_TempBlock_vue__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_MultiBlock_vue__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_ProductBlock_vue__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blocks_IconBlock_vue__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__blocks_PlainBlock_vue__ = __webpack_require__(34);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__blocks_TempBlock_vue__ = __webpack_require__(36);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__blocks_MultiBlock_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__blocks_ProductBlock_vue__ = __webpack_require__(40);
+//
+//
 //
 //
 //
@@ -469,7 +417,7 @@ pluginWebpack([0],[
 });
 
 /***/ }),
-/* 11 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -492,13 +440,13 @@ pluginWebpack([0],[
   methods: {
     iconUrl(title) {
       title = title.toLowerCase().replace(/\//g, '').replace(/ /g, '-').replace(/--/g, '-');
-      return `frontend/images/icons/lube-recommender/${title}.svg`;
+      return `../app/plugins/vue-wp-starter/assets/images/lube-recommender/${title}.svg`;
     }
   }
 });
 
 /***/ }),
-/* 12 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -520,7 +468,7 @@ pluginWebpack([0],[
 });
 
 /***/ }),
-/* 13 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -537,7 +485,7 @@ pluginWebpack([0],[
 });
 
 /***/ }),
-/* 14 */
+/* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -596,11 +544,11 @@ pluginWebpack([0],[
 });
 
 /***/ }),
-/* 15 */
+/* 13 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_products_json__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_products_json__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_products_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__data_products_json__);
 //
 //
@@ -637,21 +585,18 @@ pluginWebpack([0],[
 });
 
 /***/ }),
-/* 16 */
+/* 14 */
 /***/ (function(module, exports) {
 
 module.exports = [{"id":100,"product":"Compressor A Syn PAO","type":"Compressor Oils","grade":"Supreme","viscosity":"32 - 68 cSt","benefits":["Excellent varnish and deposits control","Excellent thermal and oxidation stability","Excellent low volatility","High air release and foam stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/371P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/371P_ssic_ENG.pdf"},"nid":2975},{"id":101,"product":"Compressor A Syn POE","type":"Compressor Oils","grade":"Supreme","viscosity":"46 - 68 cSt","benefits":["Excellent varnish and deposits control","Excellent thermal and oxidation stability","Low volatility","Excellent rust & corrosion protection"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/368P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/368P_ssic_ENG.pdf"},"nid":2977},{"id":102,"product":"Compressor A Syn PAG","type":"Compressor Oils","grade":"Supreme","viscosity":"150 - 680 cSt","benefits":["Excellent varnish and deposits control","Excellent thermal and oxidation stability","Low volatility","Excellent rust & corrosion protection"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/375P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/375P_ssic_ENG.pdf"},"nid":3002},{"id":210,"product":"Compressor A M2","type":"Compressor Oils","grade":"Standard","viscosity":"32 - 100 cSt","benefits":["Very good varnish and deposit control","Very good thermal and oxidation stability","Very good rust & corrosion protection","Very good air release and foam stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/509P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/509P_ssic_ENG.pdf"},"nid":2982},{"id":211,"product":"Compressor A M4","type":"Compressor Oils","grade":"Premium","viscosity":"32 - 100 cSt","benefits":["High varnish and deposit control","High thermal and oxidation stability","High rust & corrosion protection","High air release and foam stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/425P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/425P_ssic_ENG.pdf"},"nid":2985},{"id":212,"product":"Jenteram","type":"Turbine Oils","grade":"Standard","viscosity":"32 - 100 cSt","benefits":["Very good anti-wear protection","Very good thermal and oxidation stability","Very good rust & corrosion protection","Very good air release and foam stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/427P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/427P_ssic_ENG.pdf"},"nid":2978},{"id":213,"product":"Jenteram G","type":"Turbine Oils","grade":"Premium","viscosity":"32 - 68 cSt","benefits":["High anti-wear protection","Excellent filterability","Excellent thermal and oxidation stability","Very good varnish control"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/423P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/423P_ssic_ENG.pdf"},"nid":2996},{"id":214,"product":"Jenteram Syn","type":"Turbine Oils","grade":"Supreme","viscosity":"32 - 68 cSt","benefits":["High anti-wear protection","Excellent filterability","Excellent thermal and oxidation stability","Very good varnish control"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/418P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/418P_ssic_ENG.pdf"},"nid":2974},{"id":215,"product":"Jenteram U","type":"Turbine Oils","grade":"Premium","viscosity":"32 - 68 cSt","benefits":["Very good water separability","High multi metal compatibility","High compatibility with most seal and elastomers"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/533P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/533P_ssic_ENG.pdf"},"nid":2987},{"id":241,"product":"Gear FL","type":"Gear Oils","grade":"Premium","viscosity":"150 - 320 cSt","benefits":["Excellent micro-pitting resistance","Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/304P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/304P_ssic_ENG.pdf"},"nid":3001},{"id":242,"product":"Circula Mill","type":"Pulp & Paper","pid":1145,"grade":"Standard","viscosity":"460 cSt","benefits":["Excellent water separability","Very good oxidation stability","High rust & corrosion protection","Excellent foam stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/306P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/507P_ssic_ENG.pdf"},"nid":2998},{"id":243,"product":"Gear Syn FG","type":"Gear Oils","grade":"Supreme","viscosity":"150 - 680 cSt","benefits":["Very good rust & corrosion protection","Very good seal & paint compatibility","Very good multi metal compatibility"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/PETRONAS_Gear%20SYN%20Series_v2_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/351P_ssic_ENG.pdf"},"nid":2988},{"id":276,"product":"Gear Syn Series","type":"Gear Oils","grade":"Premium","viscosity":"150 - 680 cSt","benefits":["Very good rust & corrosion protection","Very good seal & paint compatibility","Very good multi metal compatibility"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/PETRONAS_Gear%20SYN%20Series_v2_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/351P_ssic_ENG.pdf"},"nid":2988},{"id":244,"product":"Circula","type":"Pulp & Paper","pid":1144,"grade":"Standard","viscosity":"150 - 460 cSt","benefits":["Very good anti-wear protection","High oxidation stability","Very good rust & corrosion protection","Very good water separability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/480P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/480P_ssic_ENG.pdf"},"nid":2967},{"id":245,"product":"Gear MEP","type":"Gear Oils","grade":"Premium","viscosity":"68 - 1000 cSt","benefits":["Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability","High resistance to sludging"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/PETRONAS_Gear%20MEP%20Series_v2.%2023%2005%202016_0.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/432P_ssic_ENG.pdf"},"nid":2968},{"id":246,"product":"Hydraulic ESF","type":"Hydraulic Oils","grade":"Supreme","viscosity":"46 - 68 cSt","benefits":["Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability","High resistance to sludging"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/PETRONAS_Hydraulic%20ESF%20Series_v2.%2023%2005%202016.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/581P_ssic_ENG.pdf"},"nid":2971},{"id":247,"product":"Hydraulic HV","type":"Hydraulic Oils","grade":"Premium","viscosity":"46 - 68 cSt","benefits":["Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability","High resistance to sludging"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/PETRONAS_Hydraulic%20HV%20Series_v2.%2023%2005%202016_1.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/413P_ssic_ENG.pdf"},"nid":2995},{"id":248,"product":"Hydraulic","type":"Hydraulic Oils","grade":"Standard","viscosity":"10 - 150 cSt","benefits":["Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability","High resistance to sludging"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/476P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/476P_ssic_ENG.pdf"},"nid":2991},{"id":249,"product":"Hydraulic ZF","type":"Hydraulic Oils","grade":"Premium","viscosity":"32 - 68 cSt","benefits":["Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability","High resistance to sludging"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/PETRONAS_Hydraulic%20ZF%20Series_v2.%2023%2005%202016_0.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/419P_ssic_ENG.pdf"},"nid":2979},{"id":250,"product":"Hydraulic HVZF","type":"Hydraulic Oils","grade":"Premium","viscosity":"46 - 68 cSt","benefits":["Excellent extreme pressure protection","Excellent anti-wear protection","Excellent thermal and oxidation stability","High resistance to sludging"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/PETRONAS_Hydraulic%20HVZF%20Series_v2.%2023%2005%202016.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/487P_ssic_ENG.pdf"},"nid":2973},{"id":251,"product":"Hydraulic HLPD","type":"Hydraulic Oils","grade":"Premium","viscosity":"32 - 68 cSt","benefits":["High water tolerance (up to 3%)","Low temperature protection","Excellent anti-wear protection","High thermal and oxidation stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/302P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/302P_ssic_ENG.pdf"},"nid":2980},{"id":252,"product":"Hydraulic FR","type":"Hydraulic Oils","grade":"Premium","viscosity":"42 - 68 cSt","benefits":["Excellent Fire resistance","High temperature applications","High anti-wear protection","High Viscosity Index"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/299P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/366P_ssic_ENG.pdf"},"nid":2976},{"id":253,"product":"Hydraulic HFC","type":"Hydraulic Oils","grade":"Standard","viscosity":"46 cSt","benefits":["Excellent Fire resistance","High temperature applications","High anti-wear protection","Very good thermal and oxidation stability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/366P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/366P_ssic_ENG.pdf"},"nid":2986},{"id":254,"product":"Hydraulic Syn Bio","type":"Hydraulic Oils","grade":"Supreme","viscosity":"32 - 46 cSt","benefits":["Very good rust & corrosion protection","Excellent air release and foam stability","Very good multi metal compatibility","Very good compatibility with most seal and elastomers"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/PETRONAS_Hydraulic%20SYN%20BYO%20Series_v2.%2016%2002%202018.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/366P_ssic_ENG.pdf"},"nid":2981},{"id":257,"product":"Gear PAG","type":"Gear Oils","grade":"Supreme","viscosity":"150 - 680 cSt","benefits":["Excellent anti-wear protection","Excellent thermal and oxidation stability","Excellent resistance to sludging","Very good rust & corrosion protection"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/356P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/356P_ssic_ENG.pdf"},"nid":2970},{"id":258,"product":"Circula Syn","type":"Pulp & Paper","pid":1148,"grade":"Supreme","viscosity":"150 - 680 cSt","benefits":["Excellent thermal and oxidation stability","Excellent anti-wear protection","Excellent resistance to sludging","Excellent water separability"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/345P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/345P_ssic_ENG.pdf"},"nid":2983},{"id":259,"product":"Gear Syn PAG","type":"Gear Oils","grade":"Supreme","viscosity":"150 - 680 cSt","benefits":["Excellent micro-pitting resistance","Low temperature protection","High viscosity index","Excellent extreme pressure protection"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/356P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/356P_ssic_ENG.pdf"},"nid":2970},{"id":260,"product":"Gear Syn PAO","type":"Gear Oils","grade":"Premium","viscosity":"150 - 680 cSt","benefits":["Excellent micro-pitting resistance","Low temperature protection","High viscosity index","Excellent extreme pressure protection"],"documentation":{"Product brochure":1,"Technical data sheet":"https://pli-portal.com/backend/system/files/ungrouped/428P_stecind_ENG.pdf","Safety data sheet":"https://pli-portal.com/backend/system/files/ungrouped/428P_ssic_ENG.pdf"},"nid":2997}]
 
 /***/ }),
-/* 17 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_products_json__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_products_json__ = __webpack_require__(14);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__data_products_json___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__data_products_json__);
-//
-//
-//
 //
 //
 //
@@ -802,7 +747,7 @@ module.exports = [{"id":100,"product":"Compressor A Syn PAO","type":"Compressor 
       } else {
         image = key;
       }
-      return '/public/assets/images/products/files/' + image + '-thumbnail.png';
+      return '../app/plugins/vue-wp-starter/assets/images/products/files/' + image + '-thumbnail.png';
     },
     goToRecommender() {
       this.$router.push({
@@ -830,10 +775,10 @@ module.exports = [{"id":100,"product":"Compressor A Syn PAO","type":"Compressor 
 });
 
 /***/ }),
+/* 16 */,
+/* 17 */,
 /* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */
+/* 19 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -843,11 +788,11 @@ var _vue = __webpack_require__(1);
 
 var _vue2 = _interopRequireDefault(_vue);
 
-var _App = __webpack_require__(24);
+var _App = __webpack_require__(22);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _router = __webpack_require__(28);
+var _router = __webpack_require__(24);
 
 var _router2 = _interopRequireDefault(_router);
 
@@ -865,21 +810,17 @@ new _vue2.default({
 });
 
 /***/ }),
-/* 22 */,
-/* 23 */,
-/* 24 */
+/* 20 */,
+/* 21 */,
+/* 22 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_App_vue__ = __webpack_require__(5);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_152fd186_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_152fd186_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_App_vue__ = __webpack_require__(23);
 var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(25)
-}
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -889,7 +830,7 @@ var normalizeComponent = __webpack_require__(0)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = injectStyle
+var __vue_styles__ = null
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -924,14 +865,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 25 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 26 */,
-/* 27 */
+/* 23 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -942,17 +876,7 @@ var render = function() {
   return _c(
     "div",
     { attrs: { id: "vue-frontend-app" } },
-    [
-      _c("router-link", { attrs: { to: "/" } }, [_vm._v("Home")]),
-      _vm._v(" "),
-      _c("router-link", { attrs: { to: "/profile" } }, [_vm._v("Profile")]),
-      _vm._v(" "),
-      _c("router-link", { attrs: { to: "/lube-tools" } }, [
-        _vm._v("Lube Tools")
-      ]),
-      _vm._v(" "),
-      _c("router-view")
-    ],
+    [_c("router-view")],
     1
   )
 }
@@ -968,7 +892,7 @@ if (false) {
 }
 
 /***/ }),
-/* 28 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -986,45 +910,29 @@ var _vueRouter = __webpack_require__(4);
 
 var _vueRouter2 = _interopRequireDefault(_vueRouter);
 
-var _Home = __webpack_require__(29);
-
-var _Home2 = _interopRequireDefault(_Home);
-
-var _Profile = __webpack_require__(32);
-
-var _Profile2 = _interopRequireDefault(_Profile);
-
-var _LubeRecommenderTools = __webpack_require__(35);
+var _LubeRecommenderTools = __webpack_require__(25);
 
 var _LubeRecommenderTools2 = _interopRequireDefault(_LubeRecommenderTools);
 
-var _LubeTree = __webpack_require__(40);
+var _LubeTree = __webpack_require__(31);
 
 var _LubeTree2 = _interopRequireDefault(_LubeTree);
 
-var _ProductPage = __webpack_require__(52);
+var _ProductPage = __webpack_require__(43);
 
 var _ProductPage2 = _interopRequireDefault(_ProductPage);
 
-var _gearOil = __webpack_require__(54);
+var _gearOil = __webpack_require__(46);
 
 var _gearOil2 = _interopRequireDefault(_gearOil);
 
-var _airCompressor = __webpack_require__(55);
+var _airCompressor = __webpack_require__(47);
 
 var _airCompressor2 = _interopRequireDefault(_airCompressor);
 
-var _circulatingOil = __webpack_require__(56);
+var _circulatingOil = __webpack_require__(48);
 
 var _circulatingOil2 = _interopRequireDefault(_circulatingOil);
-
-var _hydraulicOil = __webpack_require__(57);
-
-var _hydraulicOil2 = _interopRequireDefault(_hydraulicOil);
-
-var _turbineOil = __webpack_require__(58);
-
-var _turbineOil2 = _interopRequireDefault(_turbineOil);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1033,14 +941,6 @@ _vue2.default.use(_vueRouter2.default);
 exports.default = new _vueRouter2.default({
   routes: [{
     path: '/',
-    name: 'Home',
-    component: _Home2.default
-  }, {
-    path: '/profile',
-    name: 'Profile',
-    component: _Profile2.default
-  }, {
-    path: '/lube-tools',
     name: 'lube_recommender_tools',
     component: _LubeRecommenderTools2.default
   }, {
@@ -1078,192 +978,18 @@ exports.default = new _vueRouter2.default({
 });
 
 /***/ }),
-/* 29 */
+/* 25 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LubeRecommenderTools_vue__ = __webpack_require__(6);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_76253014_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__ = __webpack_require__(31);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b4d0f35a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LubeRecommenderTools_vue__ = __webpack_require__(30);
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(30)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-76253014"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Home_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_76253014_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Home_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "assets/src/frontend/components/Home.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-76253014", Component.options)
-  } else {
-    hotAPI.reload("data-v-76253014", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 30 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 31 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "hello" }, [
-    _c("span", [_vm._v(_vm._s(_vm.msg))])
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-76253014", esExports)
-  }
-}
-
-/***/ }),
-/* 32 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Profile_vue__ = __webpack_require__(7);
-/* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_35ef42f8_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Profile_vue__ = __webpack_require__(34);
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(33)
-}
-var normalizeComponent = __webpack_require__(0)
-/* script */
-
-
-/* template */
-
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = "data-v-35ef42f8"
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_Profile_vue__["a" /* default */],
-  __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_35ef42f8_hasScoped_true_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_Profile_vue__["a" /* default */],
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "assets/src/frontend/components/Profile.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-35ef42f8", Component.options)
-  } else {
-    hotAPI.reload("data-v-35ef42f8", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-/* harmony default export */ __webpack_exports__["default"] = (Component.exports);
-
-
-/***/ }),
-/* 33 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
-/* 34 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "profile" }, [
-    _vm._v("\n    The Profile Page\n")
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-var esExports = { render: render, staticRenderFns: staticRenderFns }
-/* harmony default export */ __webpack_exports__["a"] = (esExports);
-if (false) {
-  module.hot.accept()
-  if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-35ef42f8", esExports)
-  }
-}
-
-/***/ }),
-/* 35 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LubeRecommenderTools_vue__ = __webpack_require__(8);
-/* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b4d0f35a_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LubeRecommenderTools_vue__ = __webpack_require__(39);
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(36)
+  __webpack_require__(26)
 }
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1309,19 +1035,20 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 36 */
+/* 26 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 37 */
+/* 27 */,
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LubeRecommenderBlock_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LubeRecommenderBlock_vue__ = __webpack_require__(7);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_aced3458_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LubeRecommenderBlock_vue__ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_aced3458_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LubeRecommenderBlock_vue__ = __webpack_require__(29);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1367,7 +1094,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 38 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1408,7 +1135,7 @@ if (false) {
 }
 
 /***/ }),
-/* 39 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1460,7 +1187,9 @@ var render = function() {
             })
           })
         )
-      ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "clearfix" })
     ]
   )
 }
@@ -1476,14 +1205,14 @@ if (false) {
 }
 
 /***/ }),
-/* 40 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LubeTree_vue__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_LubeTree_vue__ = __webpack_require__(8);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1abed47f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LubeTree_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_1abed47f_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_LubeTree_vue__ = __webpack_require__(42);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1529,13 +1258,13 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 41 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_IconBlock_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_IconBlock_vue__ = __webpack_require__(9);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b7468880_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_IconBlock_vue__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_b7468880_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_IconBlock_vue__ = __webpack_require__(33);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1581,7 +1310,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 42 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1630,13 +1359,13 @@ if (false) {
 }
 
 /***/ }),
-/* 43 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_PlainBlock_vue__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_PlainBlock_vue__ = __webpack_require__(10);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_04d88ce7_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_PlainBlock_vue__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_04d88ce7_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_PlainBlock_vue__ = __webpack_require__(35);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1682,7 +1411,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 44 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1727,13 +1456,13 @@ if (false) {
 }
 
 /***/ }),
-/* 45 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_TempBlock_vue__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_TempBlock_vue__ = __webpack_require__(11);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9baa6a76_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_TempBlock_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_9baa6a76_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_TempBlock_vue__ = __webpack_require__(37);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1779,7 +1508,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 46 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1816,13 +1545,13 @@ if (false) {
 }
 
 /***/ }),
-/* 47 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_MultiBlock_vue__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_MultiBlock_vue__ = __webpack_require__(12);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_923e0350_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MultiBlock_vue__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_923e0350_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_MultiBlock_vue__ = __webpack_require__(39);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1868,7 +1597,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 48 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1912,13 +1641,13 @@ if (false) {
 }
 
 /***/ }),
-/* 49 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_ProductBlock_vue__ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_ProductBlock_vue__ = __webpack_require__(13);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_69196f3c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProductBlock_vue__ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_69196f3c_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProductBlock_vue__ = __webpack_require__(41);
 var disposed = false
 var normalizeComponent = __webpack_require__(0)
 /* script */
@@ -1964,7 +1693,7 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 50 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2007,7 +1736,7 @@ if (false) {
 }
 
 /***/ }),
-/* 51 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2015,246 +1744,287 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex-wrapper" }, [
-    _c("div", { staticClass: "white-bg" }, [
-      _c("div", { staticClass: "top-wrapper" }, [
-        _c("div", { staticClass: "col" }, [
-          _vm.routeId.length > 0
-            ? _c(
-                "a",
-                {
-                  staticClass: "back",
-                  on: {
-                    click: function($event) {
-                      _vm.goBackwards(_vm.routeId)
-                    }
-                  }
-                },
-                [
-                  _c("span", {
-                    staticClass: "icon icon-arrow middle back-arrow"
-                  }),
-                  _vm._v("\n            Back\n          ")
-                ]
-              )
-            : _vm._e()
-        ]),
-        _vm._v(" "),
-        _vm.type === "TempBlock"
-          ? _c("div", { staticClass: "col col-main text-center top-heading" }, [
-              _c("h4", [_vm._v(_vm._s(_vm.formattedTitle))]),
-              _vm._v(" "),
-              _c("h1", [_vm._v("Select maximum oil temperature in operation")])
-            ])
-          : _vm.type === "ProductBlock"
-            ? _c(
-                "div",
-                { staticClass: "col col-main text-center top-heading" },
-                [
-                  _c("h4", [_vm._v(_vm._s(_vm.formattedTitle))]),
-                  _vm._v(" "),
-                  _c("h1", [
-                    _vm._v(
-                      "Based on your selections the below PETRONAS Compressor Oils meet your requirements, select one to learn more"
-                    )
-                  ])
-                ]
-              )
-            : _c(
-                "div",
-                { staticClass: "col col-main text-center top-heading" },
-                [
-                  _c("h4", [_vm._v(_vm._s(_vm.formattedTitle))]),
-                  _vm._v(" "),
-                  _c("h1", [_vm._v(_vm._s(_vm.question))])
-                ]
-              ),
-        _vm._v(" "),
-        _vm.level > 0
-          ? _c("div", { staticClass: "col text-right" }, [
-              _c("div", { staticClass: "progress" }, [
-                _vm._v(_vm._s(this.level) + " "),
-                _c("div", { staticClass: "progress-bar" }, [
-                  _c("div", {
-                    staticClass: "progress",
-                    style: { width: _vm.percent }
-                  })
-                ]),
-                _vm._v(" " + _vm._s(this.levels))
-              ])
-            ])
-          : _vm._e(),
-        _vm._v(" "),
-        _c("div", { staticClass: "clearfix" })
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "flex-top-container" },
-        [
-          _vm.type === "TempBlock"
-            ? _c("div", { staticClass: "temp-box flex-container" }, [
-                _c("div", { staticClass: "temp-tool col col-3" }, [
-                  _c("div", { staticClass: "temp-type temp-head" }, [
-                    _vm._v(
-                      _vm._s(_vm.translate("Preferred unit of measurement")) +
-                        "\n                "
-                    ),
-                    _c(
-                      "div",
+  return _c(
+    "div",
+    {
+      staticClass: "lube-recommender-tool-wrapper",
+      style: {
+        "background-image":
+          "url(../app/plugins/vue-wp-starter/assets/images/bg/login-bg.svg)"
+      }
+    },
+    [
+      _c("div", { staticClass: "flex-wrapper" }, [
+        _c("div", { staticClass: "white-bg" }, [
+          _c("div", { staticClass: "top-wrapper" }, [
+            _c(
+              "div",
+              { staticClass: "col" },
+              [
+                _vm.routeId.length > 0
+                  ? _c(
+                      "a",
                       {
-                        staticClass: "button-group right",
-                        attrs: { role: "group", "aria-label": "Basic example" }
-                      },
-                      [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "button small inline",
-                            class: { white: !_vm.isMetric },
-                            attrs: { type: "button" },
-                            on: {
-                              click: function($event) {
-                                _vm.isMetric = true
-                              }
-                            }
-                          },
-                          [_vm._v("°C")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "button",
-                          {
-                            staticClass: "button small inline",
-                            class: { white: _vm.isMetric },
-                            attrs: { type: "button" },
-                            on: {
-                              click: function($event) {
-                                _vm.isMetric = false
-                              }
-                            }
-                          },
-                          [_vm._v("°F")]
-                        )
-                      ]
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "clearfix" })
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "temp-head dropdown",
-                      on: {
-                        click: function($event) {
-                          _vm.show = !_vm.show
-                        }
-                      }
-                    },
-                    [
-                      _vm._v(
-                        _vm._s(_vm.translate("Oil temperatures in operation"))
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _vm.show
-                    ? _c(
-                        "div",
-                        { staticClass: "block plain-block temp-block" },
-                        [
-                          _c("div", { staticClass: "inner" }, [
-                            _c(
-                              "ul",
-                              _vm._l(_vm.temperatures, function(temp, index) {
-                                return _c(_vm.type, {
-                                  key: index,
-                                  tag: "component",
-                                  attrs: {
-                                    index: index,
-                                    metric: _vm.isMetric,
-                                    click: _vm.tempChoice,
-                                    data: temp
-                                  }
-                                })
-                              })
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "clearfix" })
-                        ]
-                      )
-                    : _vm._e()
-                ])
-              ])
-            : _vm.type === "MultiBlock"
-              ? [
-                  _c(
-                    "div",
-                    { staticClass: "flex-container" },
-                    _vm._l(_vm.multi.multiOptions, function(option, index) {
-                      return _c(_vm.type, {
-                        key: index,
-                        tag: "component",
-                        attrs: { index: index, data: option },
-                        on: { selected: _vm.selectedBlock }
-                      })
-                    })
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "flex-container small-padding" }, [
-                    _c(
-                      "button",
-                      {
-                        directives: [
-                          {
-                            name: "show",
-                            rawName: "v-show",
-                            value: _vm.multi.chosenOptions !== "000",
-                            expression: "multi.chosenOptions !== '000'"
+                        staticClass: "back",
+                        on: {
+                          click: function($event) {
+                            _vm.goBackwards(_vm.routeId)
                           }
-                        ],
-                        staticClass: "button greenline",
-                        on: { click: _vm.multiButton }
+                        }
                       },
                       [
-                        _vm._v(
-                          _vm._s(
-                            _vm.multi.choices.reduce(function(x, y) {
-                              return x + y
-                            }) +
-                              " of " +
-                              _vm.multi.arrayLength
-                          ) + " selected - continue  "
-                        ),
                         _c("span", {
                           staticClass: "icon icon-arrow middle back-arrow"
-                        })
+                        }),
+                        _vm._v("\n              Back\n            ")
                       ]
                     )
-                  ])
-                ]
-              : _c(
+                  : _c(
+                      "router-link",
+                      {
+                        staticClass: "back",
+                        attrs: { to: { name: "lube_recommender_tools" } }
+                      },
+                      [
+                        _c("span", {
+                          staticClass: "icon icon-arrow middle back-arrow"
+                        }),
+                        _vm._v("\n              Back\n            ")
+                      ]
+                    )
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _vm.type === "TempBlock"
+              ? _c(
                   "div",
-                  { staticClass: "quiz-box flex-container" },
-                  _vm._l(_vm.options, function(option, index) {
-                    return _c(_vm.type, {
-                      key: index,
-                      tag: "component",
-                      attrs: {
-                        index: _vm.indexToAlphabet(index),
-                        click: _vm.nextStep,
-                        data: option
-                      }
-                    })
-                  })
+                  { staticClass: "col col-main text-center top-heading" },
+                  [
+                    _c("h4", [_vm._v(_vm._s(_vm.formattedTitle))]),
+                    _vm._v(" "),
+                    _c("h1", [
+                      _vm._v("Select maximum oil temperature in operation")
+                    ])
+                  ]
                 )
-        ],
-        2
-      )
-    ])
-  ])
+              : _vm.type === "ProductBlock"
+                ? _c(
+                    "div",
+                    { staticClass: "col col-main text-center top-heading" },
+                    [
+                      _c("h4", [_vm._v(_vm._s(_vm.formattedTitle))]),
+                      _vm._v(" "),
+                      _c("h1", [
+                        _vm._v(
+                          "Based on your selections the below PETRONAS Compressor Oils meet your requirements, select one to learn more"
+                        )
+                      ])
+                    ]
+                  )
+                : _c(
+                    "div",
+                    { staticClass: "col col-main text-center top-heading" },
+                    [
+                      _c("h4", [_vm._v(_vm._s(_vm.formattedTitle))]),
+                      _vm._v(" "),
+                      _c("h1", [_vm._v(_vm._s(_vm.question))])
+                    ]
+                  ),
+            _vm._v(" "),
+            _vm.level > 0
+              ? _c("div", { staticClass: "col text-right" }, [
+                  _c("div", { staticClass: "progress" }, [
+                    _vm._v(_vm._s(this.level) + " "),
+                    _c("div", { staticClass: "progress-bar" }, [
+                      _c("div", {
+                        staticClass: "progress",
+                        style: { width: _vm.percent }
+                      })
+                    ]),
+                    _vm._v(" " + _vm._s(this.levels))
+                  ])
+                ])
+              : _vm._e(),
+            _vm._v(" "),
+            _c("div", { staticClass: "clearfix" })
+          ]),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex-top-container" },
+            [
+              _vm.type === "TempBlock"
+                ? _c("div", { staticClass: "temp-box flex-container" }, [
+                    _c("div", { staticClass: "temp-tool col col-3" }, [
+                      _c("div", { staticClass: "temp-type temp-head" }, [
+                        _vm._v(
+                          _vm._s("Preferred unit of measurement") +
+                            "\n                  "
+                        ),
+                        _c(
+                          "div",
+                          {
+                            staticClass: "button-group right",
+                            attrs: {
+                              role: "group",
+                              "aria-label": "Basic example"
+                            }
+                          },
+                          [
+                            _c(
+                              "button",
+                              {
+                                staticClass: "button small inline",
+                                class: { white: !_vm.isMetric },
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.isMetric = true
+                                  }
+                                }
+                              },
+                              [_vm._v("°C")]
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "button",
+                              {
+                                staticClass: "button small inline",
+                                class: { white: _vm.isMetric },
+                                attrs: { type: "button" },
+                                on: {
+                                  click: function($event) {
+                                    _vm.isMetric = false
+                                  }
+                                }
+                              },
+                              [_vm._v("°F")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "clearfix" })
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "temp-head dropdown",
+                          on: {
+                            click: function($event) {
+                              _vm.show = !_vm.show
+                            }
+                          }
+                        },
+                        [_vm._v(_vm._s("Oil temperatures in operation"))]
+                      ),
+                      _vm._v(" "),
+                      _vm.show
+                        ? _c(
+                            "div",
+                            { staticClass: "block plain-block temp-block" },
+                            [
+                              _c("div", { staticClass: "inner" }, [
+                                _c(
+                                  "ul",
+                                  _vm._l(_vm.temperatures, function(
+                                    temp,
+                                    index
+                                  ) {
+                                    return _c(_vm.type, {
+                                      key: index,
+                                      tag: "component",
+                                      attrs: {
+                                        index: index,
+                                        metric: _vm.isMetric,
+                                        click: _vm.tempChoice,
+                                        data: temp
+                                      }
+                                    })
+                                  })
+                                )
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "clearfix" })
+                            ]
+                          )
+                        : _vm._e()
+                    ])
+                  ])
+                : _vm.type === "MultiBlock"
+                  ? [
+                      _c(
+                        "div",
+                        { staticClass: "flex-container" },
+                        _vm._l(_vm.multi.multiOptions, function(option, index) {
+                          return _c(_vm.type, {
+                            key: index,
+                            tag: "component",
+                            attrs: { index: index, data: option },
+                            on: { selected: _vm.selectedBlock }
+                          })
+                        })
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "flex-container small-padding" },
+                        [
+                          _c(
+                            "button",
+                            {
+                              directives: [
+                                {
+                                  name: "show",
+                                  rawName: "v-show",
+                                  value: _vm.multi.chosenOptions !== "000",
+                                  expression: "multi.chosenOptions !== '000'"
+                                }
+                              ],
+                              staticClass: "button greenline",
+                              on: { click: _vm.multiButton }
+                            },
+                            [
+                              _vm._v(
+                                _vm._s(
+                                  _vm.multi.choices.reduce(function(x, y) {
+                                    return x + y
+                                  }) +
+                                    " of " +
+                                    _vm.multi.arrayLength
+                                ) + " selected - continue  "
+                              ),
+                              _c("span", {
+                                staticClass: "icon icon-arrow middle back-arrow"
+                              })
+                            ]
+                          )
+                        ]
+                      )
+                    ]
+                  : _c(
+                      "div",
+                      { staticClass: "quiz-box flex-container" },
+                      _vm._l(_vm.options, function(option, index) {
+                        return _c(_vm.type, {
+                          key: index,
+                          tag: "component",
+                          attrs: {
+                            index: _vm.indexToAlphabet(index),
+                            click: _vm.nextStep,
+                            data: option
+                          }
+                        })
+                      })
+                    )
+            ],
+            2
+          )
+        ])
+      ])
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -2268,15 +2038,19 @@ if (false) {
 }
 
 /***/ }),
-/* 52 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_ProductPage_vue__ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_loader_node_modules_vue_loader_lib_selector_type_script_index_0_ProductPage_vue__ = __webpack_require__(15);
 /* empty harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_922fe60e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProductPage_vue__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_template_compiler_index_id_data_v_922fe60e_hasScoped_false_buble_transforms_node_modules_vue_loader_lib_selector_type_template_index_0_ProductPage_vue__ = __webpack_require__(45);
 var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(44)
+}
 var normalizeComponent = __webpack_require__(0)
 /* script */
 
@@ -2286,7 +2060,7 @@ var normalizeComponent = __webpack_require__(0)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
-var __vue_styles__ = null
+var __vue_styles__ = injectStyle
 /* scopeId */
 var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
@@ -2321,7 +2095,13 @@ if (false) {(function () {
 
 
 /***/ }),
-/* 53 */
+/* 44 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2334,7 +2114,8 @@ var render = function() {
     {
       staticClass: "lube-recommender-tool-wrapper product-page",
       style: {
-        "background-image": "url(/public/assets/images/bg/login-bg.svg)"
+        "background-image":
+          "url(../app/plugins/vue-wp-starter/assets/images/bg/login-bg.svg)"
       }
     },
     [
@@ -2492,41 +2273,12 @@ var render = function() {
               ])
             ]),
             _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "text-center oem-manual product-link" },
-              [
-                _vm.product.nid
-                  ? _c(
-                      "router-link",
-                      {
-                        staticClass: "oem-manual product-link",
-                        attrs: {
-                          to: {
-                            name: "products.product",
-                            params: {
-                              productId: _vm.product.nid,
-                              from: _vm.$route
-                            }
-                          }
-                        }
-                      },
-                      [
-                        _vm._v("Go to full product page "),
-                        _c("span", { staticClass: "icon icon-arrow" })
-                      ]
-                    )
-                  : _vm._e()
-              ],
-              1
-            ),
-            _vm._v(" "),
             _c("div", { staticClass: "text-center oem-manual" }, [
               _c("span", {
                 staticClass: "bell-icon",
                 style: {
                   "background-image":
-                    "url(/public/assets/images/icons/lube-recommender/bell.svg)"
+                    "url(../app/plugins/vue-wp-starter/assets/images/icons/lube-recommender/bell.svg)"
                 }
               }),
               _vm._v(" Check with OEM manual for viscosity grade")
@@ -2549,34 +2301,22 @@ if (false) {
 }
 
 /***/ }),
-/* 54 */
+/* 46 */
 /***/ (function(module, exports) {
 
 module.exports = {"name":"Gear Oil","levels":5,"title":"Gear Oil Selector","question":"Which type of gear drives do you have?","type":"IconBlock","options":[{"id":"A","title":"Spur / Bevel"},{"id":"B","title":"Helical / Spiral Bevel"},{"id":"C","title":"Hypoid"},{"id":"D","title":"Worm"}],"steps":[{"ids":["A","B","C","D"],"question":"Do you require a food grade lubricant","type":"PlainBlock","options":[{"id":"A","subtitle":"Yes"},{"id":"B","subtitle":"No"}]},{"ids":["AB","BB","CB","DB"],"question":"Select maximum oil temperature in operation","type":"PlainBlock","options":[{"id":"A","title":"EP Gear Oils","subtitle":"- 15-82°C"},{"id":"B","title":"Synthetic Gear Oils","subtitle":" - 30-180°C"}]},{"ids":["ABA","ABB","BBA","BBB","CBA","CBB","DBA"],"question":"Select the gearbox load","type":"PlainBlock","options":[{"id":"A","subtitle":"Low"},{"id":"B","subtitle":"High"}]},{"ids":["DBB"],"question":"Select the gearbox load","type":"PlainBlock","options":[{"id":"A","subtitle":"Low"},{"id":"B","subtitle":"Very high"}]},{"ids":["BBAA"],"level":6,"question":"Do you require Flender Approval?","type":"PlainBlock","options":[{"id":"A","subtitle":"Yes"},{"id":"B","subtitle":"No"}]}],"routes":[{"steps":["DBBB","BBBB","CBBB"],"product":"Gear SYN PAG","productId":259},{"steps":["AA","BA","CA","DA"],"product":"Gear SYN FG","productId":243},{"steps":["ABAA"],"product":"Circula Series","productId":244},{"steps":["ABAB","ABBA"],"product":"Circula SYN","productId":258},{"steps":["CBAB","DBBA","CBBA","ABBB","DBAB","BBAB","BBBA"],"product":"Gear SYN PAO","productId":260},{"steps":["DBAA","BBAAB","CBAA"],"product":"Gear MEP","productId":245},{"steps":["BBAAA"],"product":"Gear FL","productId":241}]}
 
 /***/ }),
-/* 55 */
+/* 47 */
 /***/ (function(module, exports) {
 
 module.exports = {"name":"Air Compressor Oil","levels":3,"title":"Air Compressor Oil Selector","question":"Which air compressor do you have?","type":"IconBlock","options":[{"id":"A","title":"Rotary Vane"},{"title":"Rotary Screw","id":"B"},{"title":"Piston","id":"C"},{"title":"Centrifugal","id":"D"}],"steps":[{"ids":["A","B"],"question":"Select your operating cycle","type":"PlainBlock","options":[{"title":"Up to 2,000 hours","id":"A"},{"title":"2,000 - 4,000 hours","id":"B"},{"title":"8,000 hours","id":"C"},{"title":"12,000 hours","id":"D"}]},{"ids":["C"],"question":"Select your operating cycle","type":"PlainBlock","options":[{"title":"Up to 2,000 hours","id":"A"},{"title":"2,000 - 4,000 hours","id":"B"},{"title":"8,000 hours","id":"C"}]},{"ids":["D"],"question":"Select your operating cycle","type":"PlainBlock","options":[{"title":"4,000 hours","id":"A"},{"title":"8,000 hours","id":"B"},{"title":"12,000 hours","id":"C"}]}],"routes":[{"steps":["AD","BD","DC"],"product":"Compressor SYN POE","productId":101},{"steps":["AC","BC","CC","DB"],"product":"Compressor SYN PAO","productId":100},{"steps":["AB","BB","CB","DAB"],"product":"Compressor A M4","productId":211},{"steps":["AA","BA","CA"],"product":"Compressor A M2","productId":210},{"steps":["DA"],"product":"Jenteram","productId":212}]}
 
 /***/ }),
-/* 56 */
+/* 48 */
 /***/ (function(module, exports) {
 
 module.exports = {"name":"Circulating Oil","levels":4,"title":"Circulating Oil Selector","question":"Which type of circulating systems do you have?","type":"IconBlock","options":[{"id":"A","title":"Gear Box"},{"id":"B","title":"Anti-friction Bearing"},{"id":"C","title":"Plain Bearing"}],"steps":[{"ids":["A"],"question":"Select your most critical anti-wear property","type":"MultiBlock","multiOptions":[{"title":"EP performance"},{"title":"Micro Pitting Performance"},{"title":"High temperature","subtitle":"Over 60°C / 140°F"}],"options":[{"id":"A","selection":["100"]},{"id":"B","selection":["010","110"]},{"id":"C","selection":["001"]},{"id":"D","selection":["111","011","101"]}]},{"ids":["B","C"],"question":"Select your most critical anti-wear property","type":"MultiBlock","multiOptions":[{"title":"Anti Wear Performance"},{"title":"High Water Tolerance"},{"title":"High temperature","subtitle":"Over 60°C / 140°F"}],"options":[{"id":"A","selection":["100"]},{"id":"B","selection":["110","010"]},{"id":"C","selection":["111","001","011","101"]}]},{"ids":["AA","AB","BA","CA","CB","BB"],"question":"Select your maximum operating oil temperature","title":"High water tolerance","type":"TempBlock","options":[{"tempOptions":[0,1,2,3,4,5,6,7],"id":"T"}]}],"temperatures":[{"c":"below 40°C","f":"below 105°F"},{"c":"40°C - 50°C","f":"105°F - 122°F"},{"c":"50°C - 60°C","f":"122°F - 140°F"},{"c":"60°C - 70°C","f":"140°F - 158°F"},{"c":"70°C - 80°C","f":"158°F - 176°F"},{"c":"80°C - 90°C","f":"176°F - 194°F"},{"c":"90°C - 100°C","f":"194°F - 212°F"},{"c":"over 100°C","f":"over 212°F"}],"routes":[{"steps":["AAT"],"product":"Gear MEP","productId":245},{"steps":["BAT","CAT"],"product":"Circula","productId":244},{"steps":["ABT"],"product":"Gear FL","productId":241},{"steps":["BBT","CBT"],"product":"Circula Mill","productId":242},{"steps":["AC"],"product":"Gear Syn Series","productId":276},{"steps":["AD"],"product":"Gear PAG","productId":257},{"steps":["BC","CC"],"product":"Circula Syn","productId":258}]}
 
-/***/ }),
-/* 57 */
-/***/ (function(module, exports) {
-
-module.exports = {"name":"Hydraulic Oil","levels":5,"title":"Hydraulic Oil Selector","question":"Which type of hydraulic pumps do you have?","type":"IconBlock","options":[{"id":"A","title":"Vane Pump 14-16-cSt"},{"id":"B","title":"Gear Pump 15-22,000-cSt"},{"id":"C","title":"Piston Pump 10-160-cSt"}],"steps":[{"ids":["A","B","C"],"question":"Select your maximum operating oil temperature","type":"TempBlock","options":[{"tempOptions":[0,1,2,3,4,5,6,7],"id":"T"}]},{"ids":["AT","BT","CT"],"question":"Which of the below is of most critical importance for choosing your hydraulic oil type?","type":"PlainBlock","options":[{"id":"A","title":"Multimetal Compatibility"},{"id":"B","title":"Environmental Sensitivity"},{"id":"C","title":"Fire Risk"},{"id":"D","title":"Water Tolerance"}]},{"ids":["ATA","BTA","CTA"],"question":"Select whether you require a Zinc free or Zinc based fluid","type":"PlainBlock","options":[{"id":"A","title":"Zinc Based"},{"id":"B","title":"Zinc Free"}]},{"ids":["ATAA","BTAA","CTAA"],"question":"Is energy saving a requirement?","type":"PlainBlock","options":[{"id":"A","subtitle":"Yes"},{"id":"B","subtitle":"No"}]},{"ids":["ATAAB","BTAAB","CTAAB","ATAB","BTAB","CTAB"],"question":"Do you require a Standard VI or a High VI?","type":"PlainBlock","options":[{"id":"A","title":"Standard VI"},{"id":"B","title":"High VI"}]},{"ids":["ATB","BTB","CTB"],"question":"Do you require a Biodegradable Eco label?","type":"PlainBlock","options":[{"id":"A","subtitle":"Yes"},{"id":"B","subtitle":"No"}]},{"ids":["ATC","BTC","CTC"],"question":"What type of anti-wear properties do you require?","type":"PlainBlock","options":[{"id":"A","subtitle":"Good Anti-wear"},{"id":"B","subtitle":"Excellent Anti-wear"}]}],"temperatures":[{"c":"below 40°C","f":"below 105°F"},{"c":"40°C - 50°C","f":"105°F - 122°F"},{"c":"50°C - 60°C","f":"122°F - 140°F"},{"c":"60°C - 70°C","f":"140°F - 158°F"},{"c":"70°C - 80°C","f":"158°F - 176°F"},{"c":"80°C - 90°C","f":"176°F - 194°F"},{"c":"90°C - 100°C","f":"194°F - 212°F"},{"c":"over 100°C","f":"over 212°F"}],"routes":[{"steps":["ATD","BTD","CTD"],"product":"Hydraulic HLPD","productId":251},{"steps":["ATCB","BTCB","CTCB"],"product":"Hydraulic FR","productId":252},{"steps":["ATCA","BTCA","CTCA"],"product":"Hydraulic HFC","productId":253},{"steps":["ATBA","BTBA","CTBA"],"product":"Hydraulic Syn Bio","productId":254},{"steps":["ATAABA","BTAABA","CTAABA"],"product":"Hydraulic","productId":248},{"steps":["ATAAA","BTAAA","CTAAA"],"product":"Hydraulic ESF","productId":246},{"steps":["ATAABB","BTAABB","CTAABB"],"product":"Hydraulic HV Series","productId":247},{"steps":["ATABB","BTABA","CTABA"],"product":"Hydraulic HVZF","productId":250},{"steps":["ATBB","BTBB","CTBB","ATABA","BTABB","CTABB"],"product":"Hydraulic ZF","productId":249}]}
-
-/***/ }),
-/* 58 */
-/***/ (function(module, exports) {
-
-module.exports = {"name":"Turbine Oil","levels":5,"title":"Turbine Oil Selector","question":"Which type of turbines do you have?","type":"IconBlock","options":[{"id":"A","title":"Steam Turbines"},{"id":"B","title":"Gas Turbines"},{"id":"C","title":"Hydro Electric Turbines"}],"steps":[{"ids":["A","B","C"],"question":"Is the turbine geared or ungeared?","type":"PlainBlock","options":[{"id":"A","title":"Geared Turbines"},{"id":"B","title":"Ungeared Turbines"}]},{"ids":["AA","BA","CA","AB","BB","CB"],"question":"What type of oil is being used?","type":"PlainBlock","options":[{"id":"A","title":"Mineral"},{"id":"B","title":"Synthetic"}]},{"ids":["AAA","ABA","BAA","BBA","CAA","CBA"],"question":"Is your current oil Zinc based?","type":"PlainBlock","options":[{"id":"A","subtitle":"Yes"},{"id":"B","subtitle":"No"}]}],"routes":[{"steps":["AAAA","CAAA","ABAA","BBAA","BAAA","CBAA"],"product":"Jenteram","productId":212},{"steps":["AAAB","BAAB","CAAB"],"product":"Jenteram G","productId":213},{"steps":["ABB","AAB","BAB","CAB","BBB","CBB"],"product":"Jenteram SYN","productId":214},{"steps":["ABAB","BBAB","CBAB"],"product":"Jenteram U","productId":215}]}
-
 /***/ })
-],[21]);
+],[19]);
