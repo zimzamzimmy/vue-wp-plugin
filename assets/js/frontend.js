@@ -440,7 +440,7 @@ pluginWebpack([0],[
   methods: {
     iconUrl(title) {
       title = title.toLowerCase().replace(/\//g, '').replace(/ /g, '-').replace(/--/g, '-');
-      return `../app/plugins/vue-wp-starter/assets/images/lube-recommender/${title}.svg`;
+      return `../app/plugins/vue-wp-plugin/assets/images/lube-recommender/${title}.svg`;
     }
   }
 });
@@ -747,7 +747,7 @@ module.exports = [{"id":100,"product":"Compressor A Syn PAO","type":"Compressor 
       } else {
         image = key;
       }
-      return '../app/plugins/vue-wp-starter/assets/images/products/files/' + image + '-thumbnail.png';
+      return '../app/plugins/vue-wp-plugin/assets/images/products/files/' + image + '-thumbnail.png';
     },
     goToRecommender() {
       this.$router.push({
@@ -1750,7 +1750,7 @@ var render = function() {
       staticClass: "lube-recommender-tool-wrapper",
       style: {
         "background-image":
-          "url(../app/plugins/vue-wp-starter/assets/images/bg/login-bg.svg)"
+          "url(../app/plugins/vue-wp-plugin/assets/images/bg/login-bg.svg)"
       }
     },
     [
@@ -2115,7 +2115,7 @@ var render = function() {
       staticClass: "lube-recommender-tool-wrapper product-page",
       style: {
         "background-image":
-          "url(../app/plugins/vue-wp-starter/assets/images/bg/login-bg.svg)"
+          "url(../app/plugins/vue-wp-plugin/assets/images/bg/login-bg.svg)"
       }
     },
     [
@@ -2278,7 +2278,7 @@ var render = function() {
                 staticClass: "bell-icon",
                 style: {
                   "background-image":
-                    "url(../app/plugins/vue-wp-starter/assets/images/icons/lube-recommender/bell.svg)"
+                    "url(../app/plugins/vue-wp-plugin/assets/images/icons/lube-recommender/bell.svg)"
                 }
               }),
               _vm._v(" Check with OEM manual for viscosity grade")
